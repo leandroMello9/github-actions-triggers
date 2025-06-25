@@ -1,9 +1,11 @@
 name: Workflow Evento
 on:
   push:
-    branches:
-      - main
-      - feature/*
+    tags:
+      - 'v*'
+    # branches:
+    #   - main
+    #   - feature/*
   # workflow_dispatch:
   #   inputs:
   #     exemplo-input:
