@@ -1,11 +1,14 @@
 name: Workflow Evento
 on:
-  push:
-    branches: 
+  pull_request: 
+    branches:
       - main
-      - feature/*
-    tags:
-      - 'v*'
+  #push:
+    #branches: ## - Trigger por branches
+     # - main
+      #- feature/*
+    #tags: ## - Trigger por tags
+     # - 'v*'
     # branches:
     #   - main
     #   - feature/*
