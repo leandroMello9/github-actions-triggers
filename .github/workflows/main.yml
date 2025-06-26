@@ -22,6 +22,7 @@ on:
 jobs:
   teste:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - name: Action de Teste
         run: |
