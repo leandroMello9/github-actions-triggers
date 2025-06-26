@@ -3,6 +3,8 @@ on:
   pull_request: 
     branches:
       - main
+    types: #Indica quando os jobs irão ser desparados no pull request
+      - closed
 
   #push:
     #branches: ## - Trigger por branches
