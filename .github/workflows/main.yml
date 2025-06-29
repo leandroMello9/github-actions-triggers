@@ -31,14 +31,4 @@ jobs:
       - name: Action de Teste
         run: |
           echo "Actions executado apens em main e features"
-      - name: Alteração no Card
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Ação executada com sucesso!'
-            })
     
